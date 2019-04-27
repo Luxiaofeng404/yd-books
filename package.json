@@ -1,0 +1,23 @@
+{
+  "name": "yd-books",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.16.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luxiaofeng404/yd-books.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luxiaofeng404/yd-books/issues"
+  },
+  "homepage": "https://github.com/Luxiaofeng404/yd-books#readme"
+}
