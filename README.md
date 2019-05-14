@@ -1,27 +1,42 @@
-# MyApp
+# DevTools Timeline URL extension
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+Socialising the profiling experience by making it a little easier to share timelines. This Chrome DevTools extension helps you generate a URL to share your timeline.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![](http://i.imgur.com/otBJWYZ.jpg)
 
-## Code scaffolding
+## Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Here's a URL the tool generated. Go ahead and click it.
+```
+https://frontend.chrome-dev.tools/serve_rev/@0ca1f564f9660554511191fbd38bec101ca6f08d/inspector.html?loadTimelineFromURL=https://dl.dropboxusercontent.com/u/39519/temp/kenneth-io-Timeline.json
+```
 
-## Build
+## Install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+https://chrome.google.com/webstore/detail/timeline-url-for-devtools/oclhnibplhejninpifaddfoodnmpcpok
 
-## Running unit tests
+## Usage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Record a timeline which you'd like to share
+* Right click > save timeline as
+* You upload it somewhere (dropbox, drive, ...)
+* Open the sources panel of Chrome Devtools.
+* Open the "Timeline URL" plane
+* Drop the (publicely accessable) URL to your timeline in the text area
+* Copy the big url it returns
+* You can send it around to your team, attach it to a bug report, ...
+* Everybody using chrome can access your timeline using that URL.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Development
 
-## Further help
+Clone the repo (or your fork), run `npm install`, `grunt debug` and install `app/` in `chrome://extensions/` (`load unpacked extension`).  
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## License
+
+Apache 2.0
+Copyright 2015 [Arthur Verschaeve](http://arthurverschaeve.be)
+
+
